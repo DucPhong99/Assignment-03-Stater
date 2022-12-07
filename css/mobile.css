@@ -1,0 +1,103 @@
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 20px;
+  }
+  /* BANNER */
+
+  header {
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.6),
+        rgba(34, 34, 34, 0.6)
+      ),
+      url(../images/banner.jpg);
+    background-size: cover;
+    height: 22vh;
+    position: relative;
+    color: #fff;
+  }
+
+  .container-banner {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container-banner h1 {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  .container-banner span {
+    font-size: 14px;
+  }
+
+  /* NAV-BAR */
+  .navigation {
+    font-size: 16px;
+    color: #4dabf7;
+    text-align: left;
+    padding-left: 5rem;
+
+    display: block;
+  }
+  .navigation-icon {
+    border-left: none;
+  }
+  .avatar img {
+    display: none;
+  }
+
+  /* THÔNG TIN */
+  #target,
+  #personal-info {
+    padding: 2rem;
+  }
+  /* LÍ LỊCH */
+
+  .jop {
+    padding-top: 24px;
+    margin: 0 -2rem;
+  }
+  /* CHỨNG CHỈ - GIẢI THƯỞNG */
+  .certificate-list {
+    display: block;
+  }
+  .certificate-list h2 {
+    padding-left: 0;
+  }
+  .list-1,
+  .list-2 {
+    border-bottom: 1px solid #ff8787;
+  }
+  .list-2 {
+    border-left: none;
+  }
+  .list-2 img,
+  .list-3 img {
+    padding-top: 1rem;
+  }
+  .list-3 img,
+  .list-3 div {
+    width: 100%;
+  }
+
+  /* DỰ ÁN */
+  .project-list {
+    height: 29rem;
+  }
+
+  .project-grid {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  /* FOOTER  */
+
+  .footer-item {
+    font-size: 24px;
+  }
+  .footer-item p {
+    display: none;
+  }
+}

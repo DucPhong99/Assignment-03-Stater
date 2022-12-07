@@ -1,0 +1,66 @@
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* BANNER */
+  header {
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.6),
+        rgba(34, 34, 34, 0.6)
+      ),
+      url(../images/banner.jpg);
+    background-size: cover;
+    height: 33vh;
+    position: relative;
+    color: #fff;
+  }
+
+  .container-banner {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* NAV-BAR */
+  .navigation {
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr;
+  }
+  .avatar {
+    border-left: 1px solid #ced4da;
+  }
+  .avatar img {
+    display: none;
+  }
+  .border-left {
+    border-left: 1px solid #ced4da;
+  }
+
+  /* THÔNG TIN */
+  #target,
+  #personal-info {
+    padding: 1.5rem 1.5rem 0 !important;
+  }
+  /* LÍ LỊCH */
+
+  .grid {
+    height: auto;
+  }
+
+  /* CHỨNG CHỈ - GIẢI THƯỞNG */
+
+  /* DỰ ÁN */
+
+  .project-list {
+    height: 36rem;
+  }
+  .projest-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid3 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  /* FOOTER  */
+  .container-footer i {
+    font-size: 34px;
+  }
+}

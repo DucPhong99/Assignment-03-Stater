@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  color: #343440;
+  letter-spacing: 0.5px;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #364fc7;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  border: 8px solid #364fc7;
+  justify-self: center;
+}
+.Goals,
+.Scope,
+.Team,
+.Primary,
+.Timeline {
+  border: 6px solid #364fc7;
+}
+.grid {
+  display: flex;
+  gap: 32px;
+  padding-left: 1rem;
+  align-items: center;
+}
+
+.text {
+  padding-top: 1rem;
+}
+
+/* Goals */
+
+.icon-goal {
+  width: 100px;
+  margin-top: -2rem;
+}
+.goal-solid {
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Scope */
+.Scope {
+  grid-area: 2/ 1 / 3 / 2;
+}
+
+/* Team */
+
+.icon-team {
+  width: 32px;
+  height: 4rem;
+}
+
+/* Primary */
+
+.icon-primary {
+  width: 130px;
+  margin-top: -5rem;
+}
+
+/* Timeline */
+.Timeline {
+  grid-area: 1/ 3/ 3/ 4;
+}
+.number {
+  text-align: center;
+  color: white;
+  padding: 10px;
+
+  background-color: #9775fa;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.dotted {
+  padding-top: 1rem;
+  border-bottom: 1px dotted #3bc9db;
+}
+
+/* mobile */
+/* tablet */
+@media screen and (max-width: 992px) {
+  .row {
+    display: block;
+    margin: 2rem;
+  }
+  .grid {
+    display: block;
+    text-align: center;
+  }
+  .text {
+    text-align: left;
+  }
+  /* Goals */
+  .icon-goal {
+    width: 70px;
+    margin-top: 1rem;
+  }
+  /* Scope */
+
+  /* Team */
+  .icon-team {
+    margin-top: -1rem;
+  }
+  /* Primary */
+  .icon-primary {
+    width: 34px;
+    margin-top: 0.5rem;
+  }
+
+  /* Timeline */
+  .timeline-item {
+    padding-top: 1rem;
+  }
+  .number {
+    width: 50px;
+    height: 50px;
+  }
+}
